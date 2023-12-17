@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>My Dictionary</title>
+</head>
+<body>
+    <h1>Words List</h1>
+    <table class="words_list">
+        <tr>
+            <th>Original Word</th>
+            <th>Translation</th>
+        </tr>
+        {% for i in range(words1|length) %}
+        <tr>
+            <td>{{ words1[i] }}</td>
+            <td>{{ words2[i] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
